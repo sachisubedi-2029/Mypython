@@ -3,12 +3,18 @@
 
 def finding_x_y(a1,a2,b1,b2,c1,c2):
   D = a1*b2 - a2*b1
+  print("D ",a1,"*",b2,"-",a2,"*",b1,"=", D)
   Dx = c1*b2 - c2*b1
+  print("Dx =",c1,"*",b2,"-",a2,"*",b1,"=", Dx)
   Dy = a1*c2 - a2*c1
+  print("Dy =",a1,"*",c2, "-",a2,"*",c1,"=", Dy)
 
   if D!=0:
     x = Dx/D
+    print("The determinant is not zero. So,")
+    print("x = Dx/D =",Dx/D,"=",x)
     y = Dy/D
+    print("y = Dy/D =",Dy/D,"=",y)
     return x,y 
   else:
     print("No unique solutions of x and y if D=0")  
